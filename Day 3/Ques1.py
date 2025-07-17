@@ -1,0 +1,15 @@
+# Given a dictionary of student names and a list of their marks, print the average marks for a queried student, rounded to 2 decimal places.
+
+if __name__ == '__main__':
+    n = int(input())
+    student_marks = {}
+
+    for _ in range(n):
+        name, *line = input().split()
+        scores = list(map(float, line))
+        student_marks[name] = scores
+
+    query_name = input()
+    query_scores = student_marks[query_name]
+    average = sum(query_scores) / len(query_scores)
+    print(f"{average:.2f}")
