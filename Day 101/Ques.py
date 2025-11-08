@@ -1,3 +1,4 @@
+
 # Ques : Convert both timestamps to UTC using their timezone offsets, then find and print the absolute difference between them in seconds.
 
 from datetime import datetime
